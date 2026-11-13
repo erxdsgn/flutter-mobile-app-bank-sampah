@@ -3,25 +3,27 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  // Hijau
-  static const green = Color(0xFF45DD60); // warna utama (header, tombol, link)
-  static const greenDeep = Color(0xFF38B54E); // kartu saldo, tombol bulat
-  static const greenDark = Color(0xFF2E7D5B);
-  static const greenSoft = Color(0xFFDDFBE3); // latar ikon menu
-  static const greenBanner = Color(0xFFE9FCEC); // latar banner pengingat
-  static const greenSurface = Color(0xFFEEF6F1); // latar kartu transaksi
-  static const greenSurfaceBorder = Color(0xFFDCEBE1);
+  static const Color primary = Color(0xFF43DC5E);
+  static const Color border = Color(0xFFD9D9D9);
+  static const Color hint = Color(0xFFBDBDBD);
+  static const Color subtitle = Color(0xFF8A8A8A);
+  static const Color text = Color(0xFF000000);
 
-  // Netral
-  static const white = Colors.white;
-  static const textDark = Color(0xFF222222);
-  static const muted = Color(0xFF808080);
-  static const hint = Color(0xFFBDBDBD);
-  static const border = Color(0xFFD0D0D0);
-  static const divider = Color(0xFFD6E4DB);
-  static const avatarBg = Color(0xFFF1F1F1);
-  static const avatarBorder = Color(0xFFDDDDDD);
+  // ---- Tambahan yang dibutuhkan oleh ProductPage & ProductCard ----
+  static const Color green = Color(0xFF43DC5E);         // Alias/sama dengan primary
+  static const Color muted = Color(0xFF8A8A8A);         // Bisa disamakan dengan subtitle atau hint
+  static const Color avatarBorder = Color(0xFFF0F0F0);  // Warna latar/border placeholder
+  static const Color textDark = Color(0xFF1E1E1E);      // Warna teks gelap utama
 
-  // Aksen
-  static const accentYellow = Color(0xFFF5B83D);
+  // ---- Ditambahkan untuk halaman Home ----
+  static const Color primaryDark = Color(0xFF38B54A);  
+  static const Color primaryLight = Color(0xFFDDFCE3); 
+  static const Color surfaceTint = Color(0xFFEFF7F1);  
+  static const Color divider = Color(0xFFD5E3D9);      
+  static const Color neutralLight = Color(0xFFF0F0F0); 
+
+  // ---- Ditambahkan untuk Halaman Setoran & Status ----
+  static const Color danger = Color(0xFFE53935);       
+  static const Color surfaceGrey = Color(0xFFF5F6F8);   
+  static const Color primarySoft = Color(0xFFF0FAF4);   
 }
