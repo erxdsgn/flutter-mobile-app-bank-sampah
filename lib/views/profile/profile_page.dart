@@ -1,4 +1,6 @@
 import 'dart:convert';
+import 'package:bank_sampah/views/profile/about_page.dart';
+import 'package:bank_sampah/views/profile/pusat_bantuan_page.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
@@ -466,13 +468,27 @@ class _ProfilePageState extends State<ProfilePage> {
                         _MenuCard(
                           icon: Icons.info_outline,
                           title: "Tentang Kami",
-                          onTap: () {},
+                          onTap: () {
+                           Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => const AboutPage(),
+                              ),
+                            );
+                          },
                         ),
                         
                         _MenuCard(
                           icon: Icons.help_outline,
                           title: "Bantuan",
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => const PusatBantuanPage(),
+                              ),
+                            );
+                          },
                         ),
                         
                         _MenuCard(

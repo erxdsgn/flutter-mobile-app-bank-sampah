@@ -8,7 +8,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // 2. Inisialisasi Firebase
-  await Firebase.initializeApp(); // <-- TAMBAHKAN BARIS INI
+  // await Firebase.initializeApp(); // <-- TAMBAHKAN BARIS INI
 
   // 3. Aktifkan format tanggal Bahasa Indonesia ('id_ID')
   await initializeDateFormatting('id_ID', null);

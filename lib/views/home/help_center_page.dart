@@ -1,3 +1,4 @@
+import 'package:bank_sampah/views/profile/about_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -85,7 +86,12 @@ class HelpCenterPage extends StatelessWidget {
                     subtitle:
                         "Dapatkan informasi dan pertanyaan yang sering diajukan oleh masyarakat",
                     onTap: () {
-                      // isi link navigasi tentang bank sampah
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const AboutPage(),
+                        ),
+                      );
                     },
                   ),
                 ],
